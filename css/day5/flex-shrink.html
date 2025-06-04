@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: flex;
+            width: 100%;
+            border: 2px solid black;
+        }
+
+        .box {
+            flex-basis: 200px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            line-height: 100px;
+            font-size: 24px;
+            color: white;
+        }
+
+        .box1 {
+            background-color: red;
+            flex-shrink: 1;
+            /* default */
+        }
+
+        .box2 {
+            background-color: green;
+            flex-shrink: 3;
+            /* shrink twice as much as .box1 and .box3 */
+        }
+
+        .box3 {
+            background-color: blue;
+            flex-shrink: 0;
+            /* do not shrink at all */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box box1">1</div>
+        <div class="box box2">2</div>
+        <div class="box box3">3</div>
+    </div>
+
+
+
+</body>
+
+</html>

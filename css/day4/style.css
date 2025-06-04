@@ -1,0 +1,47 @@
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes moveBox {
+    to {
+        top: 100px;
+        left: 100px;
+        transform: rotate(360deg);
+        border-radius: 100%;
+    }
+}
+
+.wrapper {
+    height: 200px;
+    position: relative;
+    width: 200px;
+    background-color: red;
+}
+
+
+.wrapper:hover .box {
+    animation: moveBox 2s ease-in infinite;
+}
+
+
+.wrapper2 {
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    position: relative;
+}
+
+.box2 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

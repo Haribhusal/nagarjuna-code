@@ -1,0 +1,5 @@
+
+Inline css=> within html element.
+Internal css => it stays in each html file, within head tag and style element. 
+External css => separate file for css and connect to 
+all html files.

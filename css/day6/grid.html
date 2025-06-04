@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: yellow;
+            display: grid;
+            gap: 20px;
+            /* grid-template-columns: 1fr 1fr 1fr 1fr */
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(10, 1fr);
+        }
+
+        aside {
+            grid-row-start: 1;
+            grid-row-end: 11;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            background-color: black;
+        }
+
+        header {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 3;
+            grid-column-end: 11;
+            background-color: red;
+        }
+
+        main {
+            grid-row-start: 3;
+            grid-row-end: 10;
+            grid-column-start: 3;
+            grid-column-end: 11;
+            background-color: white;
+        }
+
+        footer {
+            grid-row-start: 10;
+            grid-row-end: 11;
+            grid-column-start: 3;
+            grid-column-end: 11;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>This is header</header>
+    <!-- <div class="sidebar"></div> -->
+    <aside>
+        This is sidebar
+    </aside>
+    <main>
+        this is main content of my website
+    </main>
+    <footer>
+        this is footer
+    </footer>
+
+</body>
+
+</html>
