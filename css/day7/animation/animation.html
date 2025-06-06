@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+            transform: translateY(100px);
+            animation: moveToRightMyBox 1s ease infinite alternate;
+        }
+
+        @keyframes moveToRightMyBox {
+
+            33% {
+                /* transform: translateX(300px) rotate(360deg); */
+                background-color: red;
+                border-radius: 100%;
+                transform: translate(150px, 0px);
+
+            }
+
+            66% {
+                /* transform: translate(300px, 300px); */
+                background-color: greenyellow;
+                border-radius: 100%;
+                transform: translate(300px, 150px);
+
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box"></div>
+
+</body>
+
+</html>

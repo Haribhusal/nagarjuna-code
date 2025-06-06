@@ -1,0 +1,41 @@
+Why do we need git?
+- Collaboration
+- Version control
+- Backup/storage
+
+How to use?
+- install git, use it via terminal/powershell/command prompt/git bash/
+
+How it works?
+- it syncs the local changes with cloud storage.
+
+Procedure:
+1- Create Github account
+2- Create new repo/repository
+    - repo name
+    - public or private
+3- You may want to connect this repo with your project folder in your computer.
+4- go to your project folder
+5- open that folder with vs code (You can open vs code first and select project folder)
+6- Open a terminal (ctrl + ~)
+7- use command "git init" => it will create .git folder
+8- Go to github repo, grab repo origin link
+See following area: 
+
+or push an existing repository from the command line
+ Pick this line => git remote add origin https://github.com/<username>/<repo_name>.git
+git branch -M main
+git push -u origin main
+9- use command git remote add origin https://github.com/<username>/<repo_name>.git
+10- use command "git add ."
+11- use command "git commit -m 'your message for commit' "
+12- check branch name => default will be master or main
+13- Git push origin <branch_name>
+
+
+After you may change your code and you need to push the changes
+14- use command "git status" => all the changes you made.
+15- Repeat 10-13 
+
+How to clone other's repo?
+1- use command "git clone 'repo_url' "
