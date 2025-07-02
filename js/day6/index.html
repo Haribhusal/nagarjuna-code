@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="my-heading">Welcome to Js</h1>
+    <button id="btn">Click here to change text and style</button>
+
+    <script>
+        let myBtn = document.getElementById('btn')
+        let heading = document.getElementById('my-heading');
+
+        myBtn.addEventListener('click', function () {
+            heading.innerText = "Hello, There, I am changed"
+            heading.style.color = 'red';
+            heading.style.backgroundColor = 'yellow'
+        })
+
+
+    </script>
+
+</body>
+
+</html>

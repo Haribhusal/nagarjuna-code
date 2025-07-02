@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dropdown {
+            padding: 10px 15px;
+            background-color: powderblue;
+        }
+
+        .dropdown .dropdown-content {
+            display: none;
+        }
+
+        .active .dropdown-content {
+            display: block;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dropdown" id="drop">
+        <div class="dropdown-title">Is Javascript easy to learn?</div>
+        <div class="dropdown-content">
+            Yes, Javascript is easy to learn, it JavaScript, often abbreviated as JS, is a programming language and core
+            technology of the World Wide Web, alongside HTML
+            and CSS. Ninety-nine percent of websites use JavaScript on the client side for webpage behavior. Web
+            browsers have a
+            dedicated JavaScript engine that executes the client code.
+        </div>
+    </div>
+
+
+    <script>
+        let drop = document.getElementById('drop');
+        drop.addEventListener('click', function () {
+            this.classList.toggle('active')
+        })
+    </script>
+
+</body>
+
+</html>
